@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 350px;
+}
+
+.login-box {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 40px;
+  text-align: center;
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #0095f6;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  background-color: #fafafa;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  background-color: #0095f6;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #007dc1;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+
+.divider span {
+  margin: 0 10px;
+  font-size: 14px;
+  color: #8e8e8e;
+}
+
+.facebook-login {
+  background: none;
+  border: none;
+  color: #385185;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.forgot-password {
+  display: block;
+  margin-top: 15px;
+  font-size: 12px;
+  color: #00376b;
+  text-decoration: none;
+}
+
+.signup-box {
+  text-align: center;
+  padding: 10px;
+}
+
+.signup-box p {
+  font-size: 12px;
+}
+
+.signup-box a {
+  color: #0095f6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .login-box {
+    padding: 30px 20px;
+  }
+
+  .logo {
+    font-size: 35px;
+  }
+
+  input, button {
+    font-size: 13px;
+  }
+
+  .facebook-login {
+    font-size: 13px;
+  }
+}
